@@ -1,0 +1,591 @@
+input[type=text], select {
+  width: 100%;
+  height:40px; 
+  text-align:center !important;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password], select {
+  width: 100%;
+  height:40px; 
+  text-align:center !important;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  color: #888888;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+
+input[type=submit]:hover {
+  background-color:rgb(239, 239, 239);
+  color: #333;
+}
+
+.inputGray {
+  background-color: #fafafa;
+}
+.inputGrayEdit{
+  background-color: #fafafa;
+  width: 75%;
+}
+.inputWhite {
+  background-color: white;
+}
+.submitGray {
+  background-color: #fafafa;
+}
+.submitWhite {
+  background-color: white;
+}
+
+#register_msg{
+  text-align: center;
+  color: #ff8080;
+  width: 100%;
+  font-size: 18px;
+}
+
+#login_msg{
+  text-align: center;
+  color: #ff8080;
+  width: 100%;
+  font-size: 18px;
+}
+
+#searchDiv{
+  width:100%;
+  text-align: center;
+}
+
+#searchRest{
+  width:25%;
+}
+
+.restLi{
+  width:80%;
+  height:80px;
+}
+
+.liDiv{
+  display: inline-block;
+  border-style: solid;
+  border-width: 2px;
+}
+
+#restaurantList{
+  padding-left: 10%;
+  padding-right: 10%;
+  width:100%;
+}
+
+#ListTable{
+  margin-top: 20px;
+  border: 0px solid black;
+  width: 80%;
+  margin-left: 10%;
+}
+.restDiv{
+  width: 100%;
+}
+
+
+#ListTable tr{
+  border-top: 1px solid gray;
+  
+}
+
+.ListTable{
+  margin-top: 20px;
+  border: 0px solid black;
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+.ListTable tr{
+  border-top: 1px solid gray;
+  
+}
+
+.tablePicTd{
+  width: 20%;
+  border: 0px solid gray;
+  padding: 1%;
+  max-height: 400px;
+  min-height: 120px;
+}
+
+.ListTableCol1{
+  width:16%;
+  padding-left: 20px;
+  padding: 1%;
+  border: 0px solid gray;
+  text-align: left;
+  max-height: 400px;
+  min-height: 120px;
+}
+
+.ListTableCol2{
+  padding-left: 10px;
+  border: 0px solid gray;
+  text-align: left;
+  max-height: 400px;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-height: 120px;
+  padding-right: 20px;
+}
+
+.ListTableCol3{
+  width: 10%;
+  border: 0px solid gray;
+  text-align: center;
+  min-height: 120px;
+  min-width: 100px;
+}
+
+.tablePic{
+  max-width: 100%;
+  max-height: 400px;
+}
+
+.h4table{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  color: #ab2f52;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 22px;
+}
+
+.denyAppr{
+  width: 40px;
+  height: 40px;
+  margin: 8%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+
+}
+
+#mainRestaurantEcho{
+  width: 400px;
+  height:200px;
+}
+
+.avgRate{
+  border: 1px solid gray;
+  margin-left: 10%;
+  width:100%;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.rating-list li {
+  float: right;
+  color: #ddd;
+  padding: 2px 2px;
+}
+
+.rating-list li:hover,
+.rating-list li:hover ~ li {
+  color: #ffd700;
+
+}
+
+.rating-list {
+  display: inline-block;
+  list-style: none;
+}
+
+.avg{
+  color: #ffd700;
+}
+.avg:hover{
+  color: red;
+}
+.AvgNo{
+  color: #ffd700;
+}
+
+/* Edit user / restaurant section */
+#content{
+  width: 100%;
+}
+
+.UserContainer {
+  position: relative;
+  float: left;
+  width: 300px;
+  border: 1px solid black;
+  width:25%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.UserContainer:hover .image {
+  opacity: 0.3;
+  background-color: #ffe7ad;
+}
+
+.UserContainer:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 18px;
+  padding: 16px 32px;
+}
+/* End of edit user / restaurant section */
+
+#passSuccess{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: green;
+}
+
+#passErr{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: #ff8080;
+}
+
+#restaurantViewTable{
+  margin-top: 20px;
+  border: 0px solid black;
+  margin-left: 25%;
+  width: 50%;
+}
+
+#restaurantViewTable tr{
+  border-top: 1px solid gray;
+  
+}
+
+.inputTitle{
+  width: 24%; 
+  display: inline-block;
+}
+.inputTitle2{
+  width: 24.5%;
+  display: inline-block;
+}
+#passSuccess{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: green;
+  margin-bottom: 40px;
+}
+
+#passErr{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: red;
+  margin-bottom: 40px;
+}
+.editHref{
+  width:49%;
+  text-align: center;
+  margin-top:50px;
+  margin-left: 0.5%;
+}
+.editButton{
+  width:100%;
+  height:100px;
+  background-color: white;
+  border: 0.5px solid lightgray;
+  color: gray;
+}
+.editButton:hover{
+  background-color:rgb(239, 239, 239);
+  color: #333;
+  cursor: pointer;
+}
+
+
+#tableListTable{
+  margin-top: 20px;
+  border: 0px solid black;
+  width: 40%;
+  margin-left: 30%;
+}
+
+#tableListTable tr{
+  border-top: 1px solid gray;
+  
+}
+
+.tableListTableCol1{
+  width:25%;
+  padding-left: 20px;
+  padding: 1%;
+  height: 80px;
+}
+
+.tableListTableCol2{
+  padding-left: 10px;
+}
+
+.tableListTableCol3{
+  width: 45%;
+  text-align: right;
+
+}
+
+.tableEditImg{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-left: 2px;
+
+}
+
+.inputNumber{
+  width: 60%;
+  border: 1px solid gray;
+  margin-left: 5px;
+  height: 50px;
+}
+
+
+.tdvote{
+  border:1px solid black;
+  width: 50%;
+  vertical-align: top;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.textarea{
+  resize:none;
+  margin-top:0px;
+  height: 400px;
+  width:100%;
+  border:1px solid gray;
+  padding:2%;
+}
+
+#voteTable{
+  margin-top:20px;
+  width:100%;
+}
+
+.functDiv{
+  margin-top: 80px;
+  width:49%;
+  display: inline-block;
+}
+
+.functHref{
+  width: 70%;
+  margin-left: 15%;
+}
+
+.functButton{
+  background-color: white;
+  width: 100%;
+  height: 160px;
+  
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+
+.functButton:hover{
+  cursor: pointer;
+  background-color:rgb(239, 239, 239);
+  color: #333;
+}
+
+#foodListTable{
+  margin-top: 20px;
+  border: 0px solid black;
+  width: 60%;
+  margin-left: 20%;
+}
+
+#foodListTable tr{
+  border-top: 1px solid gray;
+  
+}
+
+.f1{
+  color: #ab2f52;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+
+.food1{
+  width:30%;
+}
+
+.food2{
+  padding-left: 20px;
+}
+
+.food3{
+  width: 20%;
+  text-align: right;
+
+}
+
+.foodEditImg{
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-left: 10px;
+}
+
+#addFoodSubmit{
+  width: 40px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 2px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#foodListTable{
+  margin-top: 20px;
+  border: 0px solid black;
+  width: 60%;
+  margin-left: 20%;
+}
+
+#foodListTable tr{
+  border-top: 1px solid gray;
+  
+}
+
+.foodListTableCol1{
+  width:30%;
+  padding-left: 20px;
+  padding: 1%;
+  height: 80px;
+}
+
+.foodListTableCol2{
+  padding: 1%;
+  width: 35%;
+}
+
+.foodListTableCol3{
+  width: 20%;
+  text-align: right;
+padding: 1%;
+}
+.foodListTableCol4{
+  width: 15%;
+  text-align: right;
+padding: 1%;
+}
+
+.inputTitle{
+  width: 24%; display: inline-block;
+}
+.inputTitle2{
+  width: 24.5%; display: inline-block;
+}
+#passSuccess{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: green;
+  margin-bottom: 40px;
+}
+
+#passErr{
+  text-align: center;
+  width: 100%;
+  font-size: 18px;
+  color: red;
+  margin-bottom: 40px;
+}
+
+.rez{
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.filter{
+  color: #ab2f52;
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-bottom: 2px;
+}  
+
+.bookingView{
+  width: 80%;
+  margin-left: 10%;
+}
+
+#bookingTable{
+  border: 0px solid black;
+  width: 100%;
+}
+
+#bookingTable tr{
+  border-top: 1px solid gray;
+  
+}
+
+.bookingTabletd1{
+  width: 25%;
+  height: 50px;
+  padding: 1%;
+}
+
+.bookingTabletd2{
+  width: 20%;
+  padding: 1%;
+}
+
+.bookingTabletd3{
+  width: 55%;
+  padding: 1%;
+}
+
