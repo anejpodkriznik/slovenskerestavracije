@@ -1,10 +1,6 @@
 <?php
   include_once 'header.php';
 
-if(!isset($_SESSION['user_id'])){
-  header("Location: index.php");
-}
-
 $restaurantID = $_GET['id'];
 
 if(isset($_POST['updatetables']))
