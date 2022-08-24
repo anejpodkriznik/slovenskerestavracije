@@ -32,7 +32,7 @@
 
 		//skripta iz W3Schools
 		$maxsize = 50000000000;
-		$allowedExts = array("gif", "jpeg", "jpg", "png", "jfif");
+		$allowedExts = array("gif", "jpeg", "jpg", "png", "jfif", "JPG", "PNG", "JPEG", "GIF", "JFIF");
 		//razbije ime datoteke, ki jo naložiš - deli jo glede na "."
 		$temp = explode(".", $_FILES["file"]["name"]);
 		$extension = end($temp);
